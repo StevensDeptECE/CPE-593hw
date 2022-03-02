@@ -1,4 +1,4 @@
-public class GrowArray {
+public class HWGrowArray {
 	private int[] p;
 	private int size; // the number of elements used
 	private int capacity; // the amount of memory
@@ -6,7 +6,7 @@ public class GrowArray {
 		// if the memory needs to grow, double in size
 		//TODO: YOU IMPLEMENT THIS
 	}
-	public GrowArray(int initialCapacity) {
+	public HWGrowArray(int initialCapacity) {
 
 	}
 	public void addEnd(int v) {
@@ -26,7 +26,7 @@ public class GrowArray {
 	
 
 	public static void main(String[] args) {
-		GrowArray a = new GrowArray(500); // empty list, with 500 elements
+		HWGrowArray a = new HWGrowArray(500); // empty list, with 500 elements
 
 		for (int i = 0; i < 500; i++)
 			a.addEnd(i); // really fast!
@@ -46,6 +46,6 @@ public class GrowArray {
 		// 10000 10001 10002 10003 10004 10005 .... .... 998999	
 		
 		a.removeEvens();
-		System.out.println(a);
+		System.out.println(a); // use StringBuilder, not String
 	}
 }

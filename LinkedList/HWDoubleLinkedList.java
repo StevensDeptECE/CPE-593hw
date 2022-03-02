@@ -1,5 +1,5 @@
 public class HWDoubleLinkedList {
-	private	static class Node {
+	private static class Node { // static class in Java does not have pointer to the container
 		Node next;
 		Node prev;
 		int val;
@@ -8,6 +8,7 @@ public class HWDoubleLinkedList {
 	private Node head;
 	private Node tail;
 	public HWDoubleLinkedList() {
+		head.next= new Node();
 	}
 
 	public void addStart(int v) {
@@ -32,7 +33,7 @@ public class HWDoubleLinkedList {
 	}
 	// implement to print out the list
 	public String toString() {
-		return null;
+		return "Implement this!";
 	}
 
 	public static void main(String[] args) {
